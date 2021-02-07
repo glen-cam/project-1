@@ -2,6 +2,9 @@
 @import "variables";
 @import "navigation";
 
+// pages
+@import "./pages/index-page";
+
 
 html {
     font-size: 62.5%;
@@ -11,6 +14,13 @@ body {
     font-family: 'Lato', sans-serif;
     color: $black;
     background-color: $white;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 1.3rem;
+    margin: 0;
 }
 
 .wrapper {
@@ -21,12 +31,15 @@ body {
 
 h1 {
     font-family: 'Kumar One Outline', cursive;
-    font-size: 6.8rem;
+    font-size: 6rem;
     line-height: 6.4rem;
-    margin-left: 140px;
+    margin-left: 100px;
     width: 100px;
     text-transform: uppercase;
+}
 
+h2 {
+    font-size: 2.4rem;
 }
 
 h2, h3, .logo, button {
@@ -36,13 +49,28 @@ h2, h3, .logo, button {
 
 header {
     height: 90vh;
-    min-height: 600px;
-    background-size: cover;
+    min-height: 750px;
+    max-height: 800px;
+    max-width: 100%;
+    background-size: contain;
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
 
-.main-header {
-    margin-bottom: 200px;
-    background-image: url(../sanctuary-helpers/assets/header-home.jpg);
+button {
+    background-color: $green;
+    color: $white;
+    padding: 10px 10px 8px;
+    border: none;
+    letter-spacing: 1px;
 }
+
+footer {
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    height: 35px;
+    padding-top: 4px;
+    margin: 0;
+}
+
