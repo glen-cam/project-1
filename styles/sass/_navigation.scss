@@ -10,7 +10,7 @@ nav {
     ul {
         list-style: none;
         display: flex;
-        flex: 3 1 400px;
+        flex: 3 1 800px;
         align-items: center;
         justify-content: space-between;
         padding: 0;
@@ -18,7 +18,7 @@ nav {
     }
 
     li {
-        flex: 1 0 25%;
+        flex: 1 2 25%;
         text-align: center;
     }
 
@@ -27,4 +27,17 @@ nav {
         color: black;
     }
 }
+
+.header-container {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    nav {
+        margin: 0;
+        ul {
+            width: 400px;
+        }
+        }
+    }  
+
 

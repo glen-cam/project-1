@@ -4,6 +4,8 @@
 
 // pages
 @import "./pages/index-page";
+@import "./pages/blog-page";
+@import "./pages/contact-page";
 
 
 html {
@@ -14,12 +16,12 @@ body {
     font-family: 'Lato', sans-serif;
     color: $black;
     background-color: $white;
-    line-height: 20px;
+    line-height: 25px;
     letter-spacing: 2px;
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin: 0;
 }
 
@@ -33,8 +35,6 @@ h1 {
     font-family: 'Kumar One Outline', cursive;
     font-size: 6rem;
     line-height: 6.4rem;
-    margin-left: 100px;
-    width: 100px;
     text-transform: uppercase;
 }
 
@@ -45,6 +45,14 @@ h2 {
 h2, h3, .logo, button {
     font-family: 'Kumar One', cursive;
     text-transform: uppercase;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    padding-top: 20px;
+    width: 20%;
 }
 
 header {
@@ -63,6 +71,7 @@ button {
     padding: 10px 10px 8px;
     border: none;
     letter-spacing: 1px;
+    font-size: 1.5rem;
 }
 
 footer {

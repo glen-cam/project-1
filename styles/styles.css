@@ -251,8 +251,8 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 3;
-      -ms-flex: 3 1 400px;
-          flex: 3 1 400px;
+      -ms-flex: 3 1 800px;
+          flex: 3 1 800px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -265,8 +265,8 @@ nav ul {
 
 nav li {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%;
+      -ms-flex: 1 2 25%;
+          flex: 1 2 25%;
   text-align: center;
 }
 
@@ -275,12 +275,35 @@ nav a {
   color: black;
 }
 
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-container nav {
+  margin: 0;
+}
+
+.header-container nav ul {
+  width: 400px;
+}
+
 .index-page header {
   background-image: url(../sanctuary-helpers/assets/header-home.jpg);
 }
 
 .index-page header img {
   width: 55%;
+}
+
+.index-page header h1 {
+  margin-left: 100px;
+  width: 100px;
 }
 
 .index-page img {
@@ -295,7 +318,7 @@ nav a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 0 60px;
+  padding: 100px 0 60px;
 }
 
 .index-page .discover-section div:first-child {
@@ -304,12 +327,17 @@ nav a {
 
 .index-page .discover-section div:first-child h2 {
   margin: 0;
+  padding-bottom: 20px;
 }
 
-.index-page .discover-section div:last-child {
-  width: 22%;
+.index-page .discover-section img {
+  width: 80%;
   -webkit-box-shadow: -15px 15px 0 #f8fb05;
           box-shadow: -15px 15px 0 #f8fb05;
+}
+
+.index-page .discover-section button {
+  margin-top: 20px;
 }
 
 .index-page section:nth-of-type(2) {
@@ -345,8 +373,8 @@ nav a {
 .index-page .about div {
   padding-left: 40px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 350px;
-          flex: 1 0 350px;
+      -ms-flex: 1 0 500px;
+          flex: 1 0 500px;
 }
 
 .index-page .about div:nth-child(2), .index-page .about div:nth-child(4) {
@@ -382,14 +410,14 @@ nav a {
 }
 
 .index-page section:nth-of-type(4) .locations > div .img1 {
-  right: 120px;
+  right: 150px;
   bottom: 120px;
   -webkit-box-shadow: 15px 15px 0 #f8fb05;
           box-shadow: 15px 15px 0 #f8fb05;
 }
 
 .index-page section:nth-of-type(4) .locations > div .img2 {
-  left: 115px;
+  left: 150px;
   bottom: -35px;
   -webkit-box-shadow: -15px 15px 0 #f8fb05;
           box-shadow: -15px 15px 0 #f8fb05;
@@ -410,6 +438,10 @@ nav a {
 .index-page section:nth-of-type(4) .locations > div .text2 {
   text-align: right;
   margin-left: 60px;
+}
+
+.index-page section:nth-of-type(4) .locations > div button {
+  margin-top: 20px;
 }
 
 .index-page .landscape-photo {
@@ -441,6 +473,357 @@ nav a {
   margin: 0 auto 10px;
 }
 
+.blog-page header {
+  background-image: url(../sanctuary-helpers/assets/blog-image.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 50vh;
+  min-height: auto;
+  max-height: auto;
+}
+
+.blog-page header h1 {
+  margin: 100px 0;
+}
+
+.blog-page main {
+  background-color: #e0fddf;
+}
+
+.blog-page aside {
+  position: absolute;
+  right: 0;
+  top: 58%;
+  background-color: #f8fb05;
+  width: 300px;
+  -webkit-box-shadow: -15px 15px 0 #f8fb05, 0 15px 0 #f8fb05;
+          box-shadow: -15px 15px 0 #f8fb05, 0 15px 0 #f8fb05;
+}
+
+.blog-page aside h3 {
+  font-size: 1.8rem;
+}
+
+.blog-page aside img {
+  width: 100%;
+}
+
+.blog-page aside p {
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+.blog-page aside ul {
+  padding: 0 0 0 25px;
+  font-size: 1.6rem;
+}
+
+.blog-page .yellow-container {
+  background-color: #f5f5f5;
+  -webkit-box-shadow: 15px 6px 0 #f8fb05;
+          box-shadow: 15px 6px 0 #f8fb05;
+}
+
+.blog-page .yellow-container img {
+  -webkit-box-shadow: 15px 15px 0 #f8fb05;
+          box-shadow: 15px 15px 0 #f8fb05;
+  max-width: 900px;
+  border-bottom: #f8fb05 40px;
+}
+
+.blog-page .yellow-container .blog-container {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.blog-page .yellow-container .first-text {
+  padding: 20px 0 15px 0;
+}
+
+.blog-page .yellow-container .first-text span {
+  font-weight: bold;
+}
+
+.blog-page .yellow-container .first-text p {
+  padding: 15px 0px;
+}
+
+.blog-page .yellow-container .first-text h2 + p {
+  font-style: italic;
+  letter-spacing: 0;
+}
+
+.blog-page .main-container {
+  width: 70%;
+  margin: 0 auto 0 0;
+  position: relative;
+  bottom: 120px;
+  max-width: 910px;
+}
+
+.blog-page .main-container .blog-container {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.blog-page .main-container .blog-container h3 {
+  font-size: 1.8rem;
+}
+
+.blog-page .main-container .second-text {
+  padding-top: 50px;
+}
+
+.blog-page .main-container .second-text .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.blog-page .main-container .second-text .tuesday, .blog-page .main-container .second-text .wednesday {
+  width: 700px;
+}
+
+.blog-page .main-container .second-text .tuesday p, .blog-page .main-container .second-text .tuesday h4, .blog-page .main-container .second-text .wednesday p, .blog-page .main-container .second-text .wednesday h4 {
+  padding-left: 40px;
+}
+
+.blog-page .main-container .second-text .tuesday h4, .blog-page .main-container .second-text .wednesday h4 {
+  margin: 0;
+}
+
+.blog-page .main-container .second-text .tuesday h4, .blog-page .main-container .second-text .wednesday h4 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.blog-page .main-container .second-text .wednesday {
+  margin-top: 80px;
+}
+
+.blog-page .main-container .form-container {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.blog-page .main-container .form-container .top-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-page .main-container .form-container .bottom-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-page .main-container .form-container input[type="text"], .blog-page .main-container .form-container input[type="email"] {
+  display: inline-block;
+  width: 45%;
+  background-color: #e0fddf;
+  font-size: 2rem;
+  padding: 20px;
+  border: none;
+  border-bottom: 2px solid #065635;
+  letter-spacing: 1.4px;
+}
+
+.blog-page .main-container .form-container input[type="text"]::-webkit-input-placeholder, .blog-page .main-container .form-container input[type="email"]::-webkit-input-placeholder, .blog-page .main-container .form-container textarea::-webkit-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.blog-page .main-container .form-container input[type="text"]:-ms-input-placeholder, .blog-page .main-container .form-container input[type="email"]:-ms-input-placeholder, .blog-page .main-container .form-container textarea:-ms-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.blog-page .main-container .form-container input[type="text"]::-ms-input-placeholder, .blog-page .main-container .form-container input[type="email"]::-ms-input-placeholder, .blog-page .main-container .form-container textarea::-ms-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.blog-page .main-container .form-container input[type="text"]::placeholder, .blog-page .main-container .form-container input[type="email"]::placeholder, .blog-page .main-container .form-container textarea::placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.blog-page .main-container .form-container textarea {
+  height: 170px;
+  resize: none;
+  background-color: #e0fddf;
+  font-size: 2rem;
+  padding: 30px 25px 30px 20px;
+  border: 2px solid #065635;
+  letter-spacing: 1.4px;
+}
+
+.contact-page header {
+  background-image: url(../sanctuary-helpers/assets/contact-image.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 50vh;
+  min-height: auto;
+  max-height: auto;
+}
+
+.contact-page header h1 {
+  margin: 100px 0;
+}
+
+.contact-page main {
+  background-color: #e0fddf;
+}
+
+.contact-page .contact-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-page .main-container {
+  width: 70%;
+  margin: 0 auto 0 0;
+  position: relative;
+  bottom: 120px;
+  max-width: 910px;
+  background: white;
+  -webkit-box-shadow: 15px 15px 0 #f8fb05;
+          box-shadow: 15px 15px 0 #f8fb05;
+}
+
+.contact-page .main-container .form-container {
+  width: 90%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.contact-page .main-container .form-container .top-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-page .main-container .form-container .bottom-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-page .main-container .form-container input[type="text"], .contact-page .main-container .form-container input[type="email"] {
+  display: inline-block;
+  width: 45%;
+  font-size: 2rem;
+  padding: 20px;
+  border: none;
+  border-bottom: 2px solid #065635;
+  letter-spacing: 1.4px;
+}
+
+.contact-page .main-container .form-container input[type="text"]::-webkit-input-placeholder, .contact-page .main-container .form-container input[type="email"]::-webkit-input-placeholder, .contact-page .main-container .form-container textarea::-webkit-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.contact-page .main-container .form-container input[type="text"]:-ms-input-placeholder, .contact-page .main-container .form-container input[type="email"]:-ms-input-placeholder, .contact-page .main-container .form-container textarea:-ms-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.contact-page .main-container .form-container input[type="text"]::-ms-input-placeholder, .contact-page .main-container .form-container input[type="email"]::-ms-input-placeholder, .contact-page .main-container .form-container textarea::-ms-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.contact-page .main-container .form-container input[type="text"]::placeholder, .contact-page .main-container .form-container input[type="email"]::placeholder, .contact-page .main-container .form-container textarea::placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.contact-page .main-container .form-container textarea {
+  height: 200px;
+  resize: none;
+  background-color: white;
+  font-size: 2rem;
+  padding: 30px 25px 30px 20px;
+  border: 2px solid #065635;
+  letter-spacing: 1.4px;
+}
+
+.contact-page aside {
+  width: 200px;
+  margin-top: 70px;
+}
+
+.contact-page aside ul {
+  text-decoration: none;
+  padding: 0;
+}
+
+.contact-page aside ul li {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.contact-page aside ul li a {
+  padding: 0;
+  text-align: left;
+  margin-right: 10px;
+  color: #065635;
+}
+
+.contact-page aside .address {
+  height: 200px;
+  margin-top: 15px;
+}
+
+.contact-page aside .address p:first-child {
+  margin-bottom: 30px;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -449,12 +832,12 @@ body {
   font-family: 'Lato', sans-serif;
   color: #151514;
   background-color: #f5f5f5;
-  line-height: 20px;
+  line-height: 25px;
   letter-spacing: 2px;
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   margin: 0;
 }
 
@@ -468,8 +851,6 @@ h1 {
   font-family: 'Kumar One Outline', cursive;
   font-size: 6rem;
   line-height: 6.4rem;
-  margin-left: 100px;
-  width: 100px;
   text-transform: uppercase;
 }
 
@@ -480,6 +861,14 @@ h2 {
 h2, h3, .logo, button {
   font-family: 'Kumar One', cursive;
   text-transform: uppercase;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  padding-top: 20px;
+  width: 20%;
 }
 
 header {
@@ -498,6 +887,7 @@ button {
   padding: 10px 10px 8px;
   border: none;
   letter-spacing: 1px;
+  font-size: 1.5rem;
 }
 
 footer {
