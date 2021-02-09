@@ -1,5 +1,6 @@
 @import "setup";
 @import "variables";
+@import "media-queries";
 @import "navigation";
 
 // pages
@@ -68,11 +69,20 @@ header {
 button {
     background-color: $green;
     color: $white;
-    padding: 10px 10px 8px;
+    padding: 9px 7px 5px;
     border: none;
     letter-spacing: 1px;
     font-size: 1.5rem;
+    border: 3px solid $green;
+    transition: 0.5s;
+    
+    &:hover {
+        color: $green;
+        border: 3px solid $green;
+        background-color: $white;
+    }
 }
+
 
 footer {
     text-align: center;

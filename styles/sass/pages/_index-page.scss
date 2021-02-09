@@ -65,14 +65,32 @@
       justify-content: space-between;
       flex-wrap: wrap;
       padding: 40px 0 100px;
+
+      > div {
+         position: relative;
+      }
       
       div {
          padding-left: 40px;
-         flex: 1 0 500px;
+         flex: 1 0 400px;
       }
 
       div:nth-child(2), div:nth-child(4) {
          padding-left: 60px;
+      }
+
+      .fas {
+         position: absolute;
+         font-size: 1.7rem;
+         top: 10px;
+         left: -10px;
+         border-radius: 50%;
+         background-color: $yellow;
+         padding: 10px;
+      }
+
+      .fa-users, .fa-phone {
+         left: 10px;
       }
    }
 
