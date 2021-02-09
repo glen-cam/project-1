@@ -26,7 +26,7 @@
       padding: 100px 0 60px;
 
       div:first-child {
-         width: 60%;
+         width: 58%;
 
          h2 {
             margin: 0;
@@ -103,14 +103,13 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
-         flex-wrap: wrap;
+         flex-wrap: no-wrap;
          height: 50%;
          max-height: 300px;
 
          .location-img {
-            width: 53%;
+            width: 50%;
             max-width: 550px;
-            min-width: 500px;
             position: relative;
          }
 
@@ -122,7 +121,8 @@
          }
 
          .img2 {
-            left: 150px;
+            // left: 150px;
+            left: 12.5%;
             bottom: -35px;
             box-shadow: -15px 15px 0 $yellow;
          }
@@ -130,18 +130,17 @@
          .location-text {
             width: 35%;
             max-width: 550px;
-            min-width: 300px;
             margin-bottom: 100px;
          }
 
          .text1 {
-            margin-right: 60px;
+            // margin-right: 60px;
             padding-bottom: 40px;
          }
 
          .text2 {
             text-align: right;
-            margin-left: 60px;
+            // margin-left: 60px;
          }
          
          button {
@@ -165,11 +164,16 @@
       justify-content: center;
       text-align: center;
       padding: 120px 0;
+      width: 70%;
 
       p {
          text-align: left;
-         width: 70%;
          margin: 0 auto 10px;
+      }
+
+      button {
+         width: 180px;
+         margin: 0 auto;
       }
    }
 
