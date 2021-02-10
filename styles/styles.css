@@ -522,7 +522,7 @@ nav a:hover {
   right: 0;
   top: 58%;
   background-color: #f8fb05;
-  width: 300px;
+  width: 20%;
   -webkit-box-shadow: -15px 15px 0 #f8fb05, 0 15px 0 #f8fb05;
           box-shadow: -15px 15px 0 #f8fb05, 0 15px 0 #f8fb05;
 }
@@ -536,7 +536,7 @@ nav a:hover {
 }
 
 .blog-page aside p {
-  width: 300px;
+  width: 80%;
   padding-bottom: 20px;
 }
 
@@ -546,6 +546,7 @@ nav a:hover {
 }
 
 .blog-page .yellow-container {
+  width: 70%;
   background-color: #f5f5f5;
   -webkit-box-shadow: 15px 6px 0 #f8fb05;
           box-shadow: 15px 6px 0 #f8fb05;
@@ -556,6 +557,7 @@ nav a:hover {
           box-shadow: 15px 15px 0 #f8fb05;
   max-width: 900px;
   border-bottom: #f8fb05 40px;
+  width: 100%;
 }
 
 .blog-page .yellow-container .blog-container {
@@ -612,7 +614,7 @@ nav a:hover {
 }
 
 .blog-page .main-container .second-text .tuesday, .blog-page .main-container .second-text .wednesday {
-  width: 700px;
+  width: 100%;
 }
 
 .blog-page .main-container .second-text .tuesday p, .blog-page .main-container .second-text .tuesday h4, .blog-page .main-container .second-text .wednesday p, .blog-page .main-container .second-text .wednesday h4 {
@@ -987,6 +989,7 @@ nav a:hover {
   }
   .index-page .hamburger {
     display: inline-block;
+    font-size: 4rem;
   }
   .index-page .about {
     display: block;
@@ -1015,6 +1018,132 @@ nav a:hover {
   }
   .index-page .search {
     padding: 50px 0 60px;
+  }
+}
+
+@media (max-width: 970px) {
+  .blog-page .yellow-container .first-text {
+    padding: 50px;
+  }
+  .blog-page .main-container {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .blog-page .main-container .blog-container {
+    width: 100%;
+  }
+  .blog-page .main-container .form-container {
+    margin-top: 80px;
+  }
+  .blog-page .main-container .form-container input[type="text"], .blog-page .main-container .form-container input[type="email"] {
+    font-size: 150%;
+  }
+  .blog-page .main-container .form-container textarea {
+    font-size: 150%;
+  }
+  .blog-page aside {
+    position: static;
+    width: 70%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 180px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0 20px;
+  }
+  .blog-page aside img {
+    margin-right: 50px;
+    width: 40%;
+    height: 30%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -webkit-box-shadow: #e0fddf;
+            box-shadow: #e0fddf;
+  }
+  .blog-page aside div {
+    padding-top: 30px;
+  }
+  .blog-page aside div ul {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  .blog-page header nav {
+    margin: 0;
+  }
+  .blog-page header nav ul {
+    display: none;
+  }
+  .blog-page .hamburger {
+    display: inline-block;
+    font-size: 4rem;
+  }
+  .blog-page aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog-page aside div {
+    margin: 0 auto;
+    width: 55%;
+  }
+  .blog-page aside div p {
+    text-align: center;
+    width: 100%;
+  }
+  .blog-page aside div ul {
+    text-align: left;
+  }
+  .blog-page aside img {
+    margin: 30px 0 0;
+    width: 60%;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-page header h1 {
+    font-size: 8vw;
+    margin-top: 150px;
+  }
+  .blog-page .main-container {
+    width: 90%;
+  }
+  .blog-page .main-container .first-text {
+    padding: 15px;
+  }
+  .blog-page .main-container .second-text .tuesday p, .blog-page .main-container .second-text .tuesday h4, .blog-page .main-container .second-text .wednesday p, .blog-page .main-container .second-text .wednesday h4 {
+    padding: 0;
+  }
+  .blog-page .main-container .second-text img {
+    display: none;
+  }
+  .blog-page .main-container .form-container .top-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-page .main-container .form-container .top-form input[type="text"], .blog-page .main-container .form-container .top-form input[type="email"] {
+    width: 100%;
+  }
+  .blog-page aside {
+    width: 100%;
+  }
+  .blog-page aside div {
+    width: 70%;
+  }
+  .blog-page aside div ul {
+    padding: 0 5% 0 18%;
   }
 }
 
