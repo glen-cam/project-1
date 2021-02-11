@@ -1,6 +1,8 @@
+// ----- Index page starts -----
+
 .index-page {
 
-   // laptop screen size
+   // laptop
 
    @media (max-width: 970px) {
 
@@ -11,7 +13,6 @@
             margin-left: 8%;
          }
       }
-
 
       .discover-section {
          padding-top: 0;
@@ -57,7 +58,7 @@
       }
    }
 
-   //tablet screen size
+   //tablet
 
    @media (max-width: 730px) {
 
@@ -126,7 +127,6 @@
          
          .locations {
             height: 500px;
-            // margin: 250px auto 0;
          }
 
          .locations > div {
@@ -164,7 +164,7 @@
 
    }
 
-   // phone screen size
+   // mobile
 
    @media (max-width: 480px){
 
@@ -238,9 +238,11 @@
    
 }
 
+// ----- Blog page starts ------
+
 .blog-page {
 
-   // desktop
+   // laptop
 
    @media (max-width: 970px) {
 
@@ -348,6 +350,8 @@
       
    }
 
+   // mobile 
+
    @media (max-width: 480px) {
 
       header {
@@ -404,7 +408,11 @@
    }
 }
 
+// ----- Contact page starts -----
+
 .contact-page {
+
+   // laptop
 
    @media (max-width: 920px) {
 
@@ -425,6 +433,8 @@
          margin-top: 0;
          text-align: center;
       }
+
+   // tablet
 
    @media (max-width: 700px) {
 
@@ -457,6 +467,8 @@
       }
 
    } 
+
+   // mobile
 
    @media (max-width: 420px) {
 
