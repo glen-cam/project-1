@@ -1147,6 +1147,62 @@ nav a:hover {
   }
 }
 
+@media (max-width: 920px) {
+  .contact-page .contact-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-page .main-container {
+    width: 90%;
+    margin: 0 auto;
+    bottom: 80px;
+  }
+}
+
+.contact-page aside {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 0;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .contact-page header .hamburger {
+    display: inline-block;
+    font-size: 4rem;
+  }
+  .contact-page header nav {
+    margin: 0;
+  }
+  .contact-page header nav ul {
+    display: none;
+  }
+  .contact-page .form-container .top-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-page .form-container .top-form input[type="text"], .contact-page .form-container .top-form input[type="email"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-page .main-container {
+    width: 100%;
+  }
+  .contact-page .main-container .form-container {
+    width: 100%;
+  }
+  .contact-page aside {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
