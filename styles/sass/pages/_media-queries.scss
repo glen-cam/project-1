@@ -101,6 +101,10 @@
          img {
             margin: 40px auto 0;
          }
+
+         p {
+            text-align: left;
+         }
       }
 
       section:nth-of-type(2) {
@@ -141,17 +145,20 @@
 
             .location-text {
                width: 100%;
+               text-align: left;
             }
 
             .text2 {
-               text-align: center;
+               text-align: left;
             }
          }
       }
 
       .search {
+
+         margin: 0 auto;
          p {
-            text-align: center;
+            text-align: left;
          }
       }
 
@@ -162,6 +169,8 @@
    @media (max-width: 480px){
 
       header {
+
+         max-height: 350px;
 
          nav {
             margin: 0;
@@ -175,20 +184,20 @@
          margin-bottom: 20px;
          
          h1 {
-            margin: 50px 0 70px;
+            margin: 100px 0 0;
             width: 100%;
             line-height: 3rem;
          }
-      }
-
-      .hamburger {
-         display: inline-block;
-         font-size: 4rem;
+         
+         .hamburger {
+            display: inline-block;
+            font-size: 4rem;
+         }
       }
 
       .about {
          display: block;
-         text-align: center;
+         text-align: left;
          padding-bottom: 50px;
 
          div {
@@ -297,6 +306,10 @@
 
       header {
 
+         .hamburger {
+            display: inline-block;
+            font-size: 4rem;
+         }
 
          nav {
             margin: 0;
@@ -304,10 +317,6 @@
                display: none;
             }
          }
-      }
-      .hamburger {
-         display: inline-block;
-         font-size: 4rem;
       }
 
       aside {
@@ -417,37 +426,37 @@
          text-align: center;
       }
 
-      @media (max-width: 700px) {
+   @media (max-width: 700px) {
 
-         header {
+      header {
 
-            .hamburger {
-               display: inline-block;
-               font-size: 4rem;
-            }
-
-            nav {
-               margin: 0;
-               ul {
-                  display: none;
-               }
-            }
+         .hamburger {
+            display: inline-block;
+            font-size: 4rem;
          }
 
-
-         .form-container {
-
-            .top-form {
-               flex-direction: column;
-
-               input[type="text"], input[type="email"] {
-                  width: 100%;
-               }
+         nav {
+            margin: 0;
+            ul {
+               display: none;
             }
+         }
+      }
 
+
+      .form-container {
+
+         .top-form {
+            flex-direction: column;
+
+            input[type="text"], input[type="email"] {
+               width: 100%;
+            }
          }
 
       }
+
+   } 
 
    @media (max-width: 420px) {
 
@@ -455,7 +464,7 @@
          width: 100%;
 
          .form-container {
-            width: 100%;
+            width: 95%;
          }
       }
 

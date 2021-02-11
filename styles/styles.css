@@ -926,6 +926,9 @@ nav a:hover {
   .index-page .discover-section img {
     margin: 40px auto 0;
   }
+  .index-page .discover-section p {
+    text-align: left;
+  }
   .index-page section:nth-of-type(2) .gallery {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -961,17 +964,22 @@ nav a:hover {
   }
   .index-page section:nth-of-type(4) .locations > div .location-text {
     width: 100%;
+    text-align: left;
   }
   .index-page section:nth-of-type(4) .locations > div .text2 {
-    text-align: center;
+    text-align: left;
+  }
+  .index-page .search {
+    margin: 0 auto;
   }
   .index-page .search p {
-    text-align: center;
+    text-align: left;
   }
 }
 
 @media (max-width: 480px) {
   .index-page header {
+    max-height: 350px;
     min-height: 70px;
     height: 50vh;
     margin-bottom: 20px;
@@ -983,17 +991,17 @@ nav a:hover {
     display: none;
   }
   .index-page header h1 {
-    margin: 50px 0 70px;
+    margin: 100px 0 0;
     width: 100%;
     line-height: 3rem;
   }
-  .index-page .hamburger {
+  .index-page header .hamburger {
     display: inline-block;
     font-size: 4rem;
   }
   .index-page .about {
     display: block;
-    text-align: center;
+    text-align: left;
     padding-bottom: 50px;
   }
   .index-page .about div {
@@ -1072,15 +1080,15 @@ nav a:hover {
 }
 
 @media (max-width: 720px) {
+  .blog-page header .hamburger {
+    display: inline-block;
+    font-size: 4rem;
+  }
   .blog-page header nav {
     margin: 0;
   }
   .blog-page header nav ul {
     display: none;
-  }
-  .blog-page .hamburger {
-    display: inline-block;
-    font-size: 4rem;
   }
   .blog-page aside {
     -webkit-box-orient: vertical;
@@ -1195,7 +1203,7 @@ nav a:hover {
     width: 100%;
   }
   .contact-page .main-container .form-container {
-    width: 100%;
+    width: 95%;
   }
   .contact-page aside {
     width: 100%;
