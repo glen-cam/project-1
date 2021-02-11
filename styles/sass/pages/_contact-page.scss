@@ -25,6 +25,7 @@
     .main-container {
 
         width: 70%;
+        min-width: 500px;
         margin: 0 auto 0 0;
         position: relative;
         bottom: 120px;
@@ -52,8 +53,8 @@
     
             input[type="text"], input[type="email"] {
                 display: inline-block;
-                width: 45%;
-                font-size: 2rem;
+                width: 48%;
+                font-size: 1.8rem;
                 padding: 20px;
                 border: none;
                 border-bottom: 2px solid $green;
@@ -69,7 +70,7 @@
                 height: 200px;
                 resize: none;
                 background-color: white;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 padding: 30px 25px 30px 20px;
                 border: 2px solid $green;
                 letter-spacing: 1.4px;
@@ -78,8 +79,11 @@
     }
 
     aside {
-        width: 200px;
-        margin-top: 70px;
+        width: 300px;
+        min-width: 200px;
+        padding: 80px 0 0 100px;
+        text-align: left;
+
         ul {
             text-decoration: none;
             padding: 0;

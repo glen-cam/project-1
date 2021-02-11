@@ -425,14 +425,16 @@
          margin: 0 auto;
          bottom: 80px;
          }
-      }
 
       aside {
-         width: 50%;
+         width: 30%;
          margin: 0 auto;
          margin-top: 0;
          text-align: center;
+         padding: 0;
       }
+   }
+
 
    // tablet
 
@@ -453,6 +455,9 @@
          }
       }
 
+      .main-container {
+         min-width: auto;
+      }
 
       .form-container {
 
@@ -463,7 +468,6 @@
                width: 100%;
             }
          }
-
       }
 
    } 

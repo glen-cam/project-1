@@ -738,6 +738,7 @@ nav a:hover {
 
 .contact-page .main-container {
   width: 70%;
+  min-width: 500px;
   margin: 0 auto 0 0;
   position: relative;
   bottom: 120px;
@@ -784,8 +785,8 @@ nav a:hover {
 
 .contact-page .main-container .form-container input[type="text"], .contact-page .main-container .form-container input[type="email"] {
   display: inline-block;
-  width: 45%;
-  font-size: 2rem;
+  width: 48%;
+  font-size: 1.8rem;
   padding: 20px;
   border: none;
   border-bottom: 2px solid #065635;
@@ -816,15 +817,17 @@ nav a:hover {
   height: 200px;
   resize: none;
   background-color: white;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 30px 25px 30px 20px;
   border: 2px solid #065635;
   letter-spacing: 1.4px;
 }
 
 .contact-page aside {
-  width: 200px;
-  margin-top: 70px;
+  width: 300px;
+  min-width: 200px;
+  padding: 80px 0 0 100px;
+  text-align: left;
 }
 
 .contact-page aside ul {
@@ -1167,13 +1170,13 @@ nav a:hover {
     margin: 0 auto;
     bottom: 80px;
   }
-}
-
-.contact-page aside {
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 0;
-  text-align: center;
+  .contact-page aside {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 0;
+    text-align: center;
+    padding: 0;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1186,6 +1189,9 @@ nav a:hover {
   }
   .contact-page header nav ul {
     display: none;
+  }
+  .contact-page .main-container {
+    min-width: auto;
   }
   .contact-page .form-container .top-form {
     -webkit-box-orient: vertical;
